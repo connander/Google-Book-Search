@@ -1,5 +1,5 @@
 import React from "react";
-import {Row, Col} from "../Grid"
+import {Row, Col} from "../grid"
 
 const SearchResult = props => {
     return (props.books.length === 0) ? (
@@ -42,7 +42,7 @@ const SearchResult = props => {
                                         <button className="saveBook btn btn-primary" id={book.id} onClick={(event) => props.handleSavedButton(event)}>
                                             Save Book
                                         </button>
-                                        <a href={book.link} target="_blank">
+                                        <a href={book.link} target="_blank" rel="noopener noreferrer">
                                             <button className="viewBook btn btn-success">
                                                 View Book
                                         </button>
