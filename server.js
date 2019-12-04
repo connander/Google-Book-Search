@@ -5,7 +5,7 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://connors:Megabozemancats1@ds351628.mlab.com:51628/heroku_bc121zw2";
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
